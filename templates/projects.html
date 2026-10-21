@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — Wirdan Utari</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <!-- Header & Navigasi -->
+  <header>
+    <a href="/" class="logo"><span>W</span>irdan</a>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+      <a href="/skills">Skills</a>
+      <a href="/projects" class="active">Projects</a>
+      <a href="/blog">Blog</a>
+      <a href="/contact">Contact</a>
+    </nav>
+  </header>
+
+  
+  <main>
+    <section class="section">
+      <h3 class="section-title">Galeri Karya &amp; Proyek</h3>
+      <p class="text-muted">Berikut adalah beberapa proyek rekayasa web dan perancangan antarmuka yang telah saya kembangkan:</p>
+
+      <div class="project-grid">
+        
+        <article class="project-card">
+          <div class="project-thumb">
+            <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          </div>
+          <div class="project-body">
+            <h4>Web Portofolio Modern</h4>
+            <p>Portofolio pribadi multi-halaman berbasis Flask dengan struktur semantik HTML5, dark glassmorphism, dan tata letak responsif.</p>
+            <div class="tags">
+              <span class="tag">Flask</span>
+              <span class="tag">HTML5 / CSS3</span>
+              <span class="tag">Glassmorphism</span>
+            </div>
+          </div>
+        </article>
+
+        
+        <article class="project-card">
+          <div class="project-thumb">
+            <svg viewBox="0 0 24 24"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <div class="project-body">
+            <h4>Aplikasi Manajemen Kas &amp; Keuangan</h4>
+            <p>Sistem pencatatan transaksi pemasukan dan pengeluaran harian berbasis Python dan SQL dengan kalkulasi otomatis yang akurat.</p>
+            <div class="tags">
+              <span class="tag">Python</span>
+              <span class="tag">Basis Data</span>
+              <span class="tag">Fintech</span>
+            </div>
+          </div>
+        </article>
+
+       
+        <article class="project-card">
+          <div class="project-thumb">
+            <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+          </div>
+          <div class="project-body">
+            <h4>Desain UI/UX Portal Akademik</h4>
+            <p>Perancangan tata letak antarmuka pengguna interaktif dan wireframe dashboard sistem informasi perkuliahan mahasiswa.</p>
+            <div class="tags">
+              <span class="tag">UI/UX</span>
+              <span class="tag">Wireframing</span>
+              <span class="tag">Figma</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  
+  <footer>
+    <p>&copy; 2026 Wirdan Utari. Dibuat untuk Praktikum Pemrograman Web.</p>
+  </footer>
+</body>
+</html>

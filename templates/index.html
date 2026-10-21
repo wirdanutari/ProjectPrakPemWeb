@@ -3,23 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PrakPemWeb - Pertemuan 2</title>
+  <title>Wirdan Utari — Portofolio Pribadi</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
-  <header><h1>Struktur Project Flask</h1></header>
+  
+  <header>
+    <a href="/" class="logo"><span>W</span>irdan</a>
+    <nav>
+      <a href="/" class="active">Home</a>
+      <a href="/about">About</a>
+      <a href="/skills">Skills</a>
+      <a href="/projects">Projects</a>
+      <a href="/blog">Blog</a>
+      <a href="/contact">Contact</a>
+    </nav>
+  </header>
+
+  
   <main>
-    <section>
-      <h2>Struktur Folder:</h2>
-      <ul>
-        <li><strong>app.py</strong> - File utama aplikasi Flask</li>
-        <li><strong>templates/</strong> - Folder untuk file HTML</li>
-        <li><strong>static/css/</strong> - Folder untuk file CSS</li>
-        <li><strong>static/images/</strong> - Folder untuk gambar</li>
-        <li><strong>static/js</strong> - Folder untu JavaScrip</li>
-      </ul>
+    <section class="hero">
+      <div class="hero-image">
+        <img src="{{ url_for('static', filename='images/profile.jpg') }}" alt="Foto Profil Wirdan Utari">
+      </div>
+      <div class="hero-text">
+        <span class="tagline">Mahasiswi Informatika</span>
+        <h2>Halo, saya <span class="highlight">Wirdan Utari</span>.<br>
+            <span class="typewriter">Saya bikin web modern.</span></h2>
+        <p>Tertarik dalam pengembangan web, perancangan antarmuka UI/UX, dan Python</p>
+        <div class="hero-cta">
+          <a href="/contact" class="btn btn-primary">Hubungi Saya</a>
+          <a href="/projects" class="btn btn-ghost">Lihat Proyek</a>
+        </div>
+      </div>
     </section>
   </main>
-  <footer><p>Praktikum Pemrograman Web - Pertemuan 2</p></footer>
+
+  
+  <footer>
+    <p>&copy; 2026 Wirdan Utari. Dibuat untuk Praktikum Pemrograman Web.</p>
+  </footer>
 </body>
 </html>

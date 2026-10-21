@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog — Wirdan Utari</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <!-- Header & Navigasi -->
+  <header>
+    <a href="/" class="logo"><span>W</span>irdan</a>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+      <a href="/skills">Skills</a>
+      <a href="/projects">Projects</a>
+      <a href="/blog" class="active">Blog</a>
+      <a href="/contact">Contact</a>
+    </nav>
+  </header>
+
+  
+  <main>
+    <section class="section">
+      <h3 class="section-title">Catatan &amp; Artikel</h3>
+      <p class="text-muted">Kumpulan catatan teknis dan rangkuman pembelajaran seputar pemrograman web:</p>
+
+      <div class="blog-grid">
+        
+        <article class="blog-card">
+          <div class="date">20 Okt 2026</div>
+          <h4>CSS Grid vs Flexbox: Kapan Harus Digunakan?</h4>
+          <p>Memahami perbedaan mendasar: Flexbox sangat ideal untuk layout 1 dimensi (seperti bar navigasi), sedangkan CSS Grid dirancang untuk tata letak 2 dimensi (seperti galeri kartu responsif).</p>
+          <div><span class="tag">CSS3</span></div>
+        </article>
+
+        
+        <article class="blog-card">
+          <div class="date">14 Okt 2026</div>
+          <h4>Estetika Glassmorphism dengan CSS Native</h4>
+          <p>Menciptakan efek kaca buram modern menggunakan properti <code>backdrop-filter: blur()</code>, background transparan, dan design tokens di <code>:root</code> tanpa dependensi framework luar.</p>
+          <div><span class="tag">UI/UX</span></div>
+        </article>
+
+        
+        <article class="blog-card">
+          <div class="date">07 Okt 2026</div>
+          <h4>Mengapa Wajib Menggunakan url_for() di Flask</h4>
+          <p>Menghindari tautan patah (*broken links*) dengan memanfaatkan fungsi <code>url_for('static', filename='...')</code> dari template engine Jinja2 untuk menghasilkan URL absolut yang portabel.</p>
+          <div><span class="tag">Flask</span></div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  
+  <footer>
+    <p>&copy; 2026 Wirdan Utari. Dibuat untuk Praktikum Pemrograman Web.</p>
+  </footer>
+</body>
+</html>
